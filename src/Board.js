@@ -79,7 +79,7 @@ function Board({ nrows=5, ncols=5, chanceLightStartsOn=.10 }) {
 
   // if the game is won, just show a winning msg & render nothing else
   if (hasWon()) {
-    return alert('You have won!');
+    return <h1>You have won!</h1>
   }
   // TODO
   let tableBoard = [];
@@ -100,7 +100,7 @@ function Board({ nrows=5, ncols=5, chanceLightStartsOn=.10 }) {
     <table className='Board'>
       <tbody>{tableBoard}</tbody>
     </table>
-  )
+  );
 
   // TODO
 }
